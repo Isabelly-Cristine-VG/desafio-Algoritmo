@@ -10,26 +10,30 @@
 
 <body>
     <div class="container">
-        <h1></h1>
+        <div class="titulo">
+            <h1>BEM VINDOS AO</h1>
+            <img src="assets/Missão Afundável.png" alt="">
+        </div>
+
         <div class="formulario">
             <label for="ipt_nome">Insira o nome do jogador</label>
             <input type="text" id="ipt_nome">
             <button onclick="adicionarJogador()">Cadastar Jogadores</button>
             <div id="jogadoresCadastrados"></div>
+            <h3>Escolha a dificuldade!</h3>
+            <div class="dificuldade">
+                <select id="ipt_dificuldade">
+                    <option value="1">Fácil</option>
+                    <option value="2">Médio</option>
+                    <option value="3">Difícil</option>
+                </select>
+            </div>
+            <button onclick="iniciar()">Iniciar Game</button>
         </div>
     </div>
 
 
 
-    <br>
-    <br> 
-  <select id="ipt_dificuldade">
-  <option value="1">Fácil</option>
-  <option value="2">Médio</option>
-  <option value="3">Difícil</option>  
-</select>
-
-<button onclick="iniciar()">Iniciar Game</button>
 
 </body>
 <script src="index.js"></script>

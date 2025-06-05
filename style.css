@@ -11,7 +11,51 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
 }
+
+.titulo img{
+    width: 50%;
+    margin-top: -5%;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+
+.formulario input{
+    width: 55%;
+    border-radius: 10px;
+    height: 2rem;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    border: none;
+}
+
+.formulario button{
+    height: 3rem;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    font-family: "Rubik Mono One", monospace;
+    color: #edfaff;
+    background-color: #50A0BF;
+    border-color: #023859;
+    border: none;
+}
+
+.formulario select{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 10px;
+    color: #edfaff;
+    background-color: #0888bb;
+}
+
 
 /*PALETA DE CORES
 #023859
