@@ -1,16 +1,23 @@
 
 jogadores = []
 
-
 function adicionarJogador() {
-    var nomeIpt = ipt_nome.value
-    var mensagem = ''
-    jogadores.push(nomeIpt)
+    var nomeIpt = ipt_nome.value.trim();
+    var mensagem = '';
 
-    for (var i = 0; i < jogadores.length; i++) {
-
-        mensagem += `${i + 1}° Jogador: ${jogadores[i]}<br>  `
+    // Verifica se o nome já está cadastrado
+    if (jogadores.includes(nomeIpt)) {
+        alert("Jogador Já Cadastrado");
+        return;
     }
-    jogadoresCadastrados.innerHTML = mensagem
 
+    // Adiciona o novo jogador
+    jogadores.push(nomeIpt);
+
+    // Monta a mensagem com os jogadores cadastrados
+    for (var i = 0; i < jogadores.length; i++) {
+        mensagem += `${i + 1}° Jogador: ${jogadores[i]}<br>`;
+    }
+
+    jogadoresCadastrados.innerHTML = mensagem;
 }
