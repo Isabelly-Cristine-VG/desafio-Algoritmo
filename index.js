@@ -16,7 +16,7 @@ function adicionarJogador() {
         contador++
     }
     else{
-        alert('Só podem ser')
+        alert('Só podem ser 3')
     }
 
 
@@ -35,6 +35,6 @@ function iniciar() {
     for (let i = 0; i < jogadores.length; i++) {
         jogadores[i].dificuldade = dificuldade;
     }
-
+    window.location.href = "jogo.html"
     console.log(jogadores);
 }

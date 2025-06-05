@@ -1,5 +1,6 @@
 
 function gerarMatriz(){
+div_matriz.innerHTML = ''
 let qtdLinhas = 8
 let qtdColunas = 8
 let qtdBomba = 0
@@ -66,7 +67,7 @@ function verificar(matriz){
     var armadilha = false
     var tesouro = false
 
-
+    console.log(vida)
         
         if (matriz == 1) {
             tesouro = true
