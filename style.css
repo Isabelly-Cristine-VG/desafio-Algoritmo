@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+body {
+    background-color: #daf4ff;
+    font-family: "Rubik Mono One", monospace;
+    color: #023859;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*PALETA DE CORES
+#023859
+#025373
+#50A0BF
+#96C6D9
+#D8EBF2
+*/
