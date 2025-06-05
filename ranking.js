@@ -13,6 +13,13 @@ for(i=0; i<pontuacoes.length; i++){
         numMedio=numMaior
         numMaior=pontuacoes[i]
     }
+    else if(pontuacoes[i]>numMedio){
+        numMenor=numMedio
+        numMedio=pontuacoes[i]
+    }
+    else{
+        numMenor=pontuacoes[i]
+    }
 }
 
 for(a=0; a<pontuacoes.length; a++){

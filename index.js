@@ -16,7 +16,7 @@ function adicionarJogador() {
         contador++
     }
     else{
-        alert('Só podem ser cadastrados 3 jogadores!')
+        alert('Só podem ser')
     }
 
 
@@ -37,5 +37,4 @@ function iniciar() {
     }
 
     console.log(jogadores);
-    window.location.href = "jogo.html"
 }
