@@ -6,7 +6,7 @@ let qtdBomba = 0
 let dificuldade = 1
 
 
-let matriz = [[0, 0, 0, 0, 0, 0, 0, 0],
+var matriz = [[0, 0, 0, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0],
@@ -50,7 +50,8 @@ for (let bomba = 0; bomba < qtdBomba; bomba++) {
 
 for (i = 0; i < matriz.length; i++) {
     for (a = 0; a < matriz.length; a++) {
-        div_matriz.innerHTML += `<button onclick="verificar(i,a)"></button>`
+       
+        div_matriz.innerHTML += `<button onclick="verificar(${matriz[i][a]})"></button>`
     }
     div_matriz.innerHTML += `<br>`
 }
@@ -61,25 +62,21 @@ var vida = 6
 var pontuacoes = []
 var partida = 1
 
-function verificar(b, a) {
+function verificar(matriz){
     var armadilha = false
     var tesouro = false
 
 
-    for (let i = 0; i < matriz.length; i++) {
-        if (matriz[b][a] == 1) {
+        
+        if (matriz == 1) {
             tesouro = true
-            return
         }
-        if (matriz[b][a] == 2) {
-            armadilha = true
-            return
+        if (matriz == 2) {
+            armadilha = true  
         }
-    }
 
     if (armadilha) {
         vida--
-
         if (vida == 0) {
             pontuacoes.push(pontuacao)
             vida = 6
@@ -94,7 +91,6 @@ function verificar(b, a) {
         }
     } else if (tesouro) {
         pontuacao++
-
 
         if (pontuacao == 20) {
             pontuacoes.push(pontuacao)
