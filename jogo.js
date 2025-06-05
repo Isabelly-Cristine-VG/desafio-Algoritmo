@@ -59,7 +59,7 @@ for (i = 0; i < matriz.length; i++) {
 
 var pontuacao = 0
 var vida = 6
-var pontuacoes = []
+var pontuacoes = [200, 100, 150]
 var partida = 1
 
 function verificar(matriz){

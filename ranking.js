@@ -13,6 +13,13 @@ for(i=0; i<pontuacoes.length; i++){
         numMedio=numMaior
         numMaior=pontuacoes[i]
     }
+    else if(pontuacoes[i]>numMedio){
+        numMenor=numMedio
+        numMedio=pontuacoes[i]
+    }
+    else{
+        numMenor=pontuacoes[i]
+    }
 }
 
 for(a=0; a<pontuacoes.length; a++){
@@ -27,4 +34,8 @@ for(a=0; a<pontuacoes.length; a++){
     }
 }
 
+
+resultado_ranking.innerHTML = `<h1>${donoMaior}<br>Pontos:${numMaior}</h1><br>
+                            <h3>${donoMedio}<br>Pontos:${numMedio}</h3><br>
+                             <h3>${donoMenor}<br>Pontos:${numMenor}</h3>`
 
