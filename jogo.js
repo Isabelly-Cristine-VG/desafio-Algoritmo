@@ -59,6 +59,7 @@ for (i = 0; i < matriz.length; i++) {
 var pontuacao = 0
 var vida = 6
 var pontuacoes = []
+var partida = 1
 
 function verificar(b, a) {
     var armadilha = false
@@ -83,7 +84,13 @@ function verificar(b, a) {
             pontuacoes.push(pontuacao)
             vida = 6
             pontuacao = 0
-            gerarMatriz()
+            partida++
+            if(partida <= 3){
+              gerarMatriz()  
+            }else{
+                window.location.href = "ranking.html"
+            }
+            
         }
     } else if (tesouro) {
         pontuacao++
@@ -93,7 +100,13 @@ function verificar(b, a) {
             pontuacoes.push(pontuacao)
             vida = 6
             pontuacao = 0
-            gerarMatriz()
+            partida++
+            if(partida <= 3){
+                gerarMatriz()
+            }else{
+                window.location.href = "ranking.html"
+            }
+            
         }
 
     }
