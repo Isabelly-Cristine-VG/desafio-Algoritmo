@@ -56,6 +56,17 @@ body {
     background-color: #0888bb;
 }
 
+.container-matriz{
+    background-color: #0888bb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40rem;
+    height: 30rem;
+}
 
 /*PALETA DE CORES
 #023859
