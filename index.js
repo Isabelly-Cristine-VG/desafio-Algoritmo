@@ -30,5 +30,4 @@ function iniciar() {
     }
 
     console.log(jogadores);
-    window.location.href = "jogo.html";
 }
